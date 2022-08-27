@@ -1,0 +1,64 @@
+.skills_container {
+  background: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .inner_container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    .inner {
+      width: 70%;
+      .hire_btn {
+        background-color: #14edaf;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        color: white;
+        border-radius: 10px;
+        padding: 5px 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: all 0.3s linear;
+        &:hover {
+          background-color: #059069;
+        }
+      }
+      .about_desc {
+        margin-top: 10px;
+        color: gray;
+        line-height: 25px;
+        font-size: 18px;
+      }
+      .skills {
+        margin-top: 10px;
+        .skill {
+          margin: 10px 0;
+          .progress {
+            width: 100%;
+            height: 5px;
+            background: gray;
+            margin-top: 7px;
+            border-radius: 5px;
+            position: relative;
+            .progress_up {
+              position: absolute;
+              width: 70%;
+              height: 100%;
+              background: #14edaf;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .left_container {
+    // background: orange;
+  }
+  .right_container {
+    // background: red;
+  }
+}
